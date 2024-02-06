@@ -16,9 +16,6 @@
             <label for="body">Body:</label>
             <textarea id="body" name="body" rows="20"  required>{{ old('body', $post->body) }}</textarea>
 
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author" value="{{ old('author', $post->author) }}" required>
-
             <label for="image">Image (optional):</label>
             <input type="file" id="image" name="image">
 

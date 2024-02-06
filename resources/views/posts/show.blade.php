@@ -20,7 +20,9 @@
 
         <a href="{{ route('posts.index') }}" class="back-link">Back to Posts</a>
 
-        <a href="{{ route('posts.edit', $post) }}" class="Update">Update</a>
+         @auth
+            <a href="{{ route('posts.edit', $post) }}" class="Update">Update</a>
+        @endauth
 
     </div>
 @endsection

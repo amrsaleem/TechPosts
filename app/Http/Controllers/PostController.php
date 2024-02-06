@@ -4,20 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
-
 use App\Models\Post;
+
 class PostController extends Controller
 {
     public function index()
     {
         $posts = Post::all();
-        // return $posts;
         return view('posts.index', compact('posts'));
     }
     public function show($id)
     {
         $post = Post::findOrFail($id);
-        // return $post;
         return view('posts.show', compact('post'));
     }
 
@@ -31,7 +29,6 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required',
             'body' => 'required',
-            'author' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
@@ -44,7 +41,7 @@ class PostController extends Controller
         $post = Post::create([
             'title' => $request->input('title'),
             'body' => $request->input('body'),
-            'author' => $request->input('author'),
+            'author' => auth()->user()->id,
             'likes' => 0,
             'image' => $imagePath,
         ]);
@@ -63,7 +60,6 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required',
             'body' => 'required',
-            'author' => 'required',
             'image' => 'image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
@@ -79,7 +75,6 @@ class PostController extends Controller
             'title' => $request->input('title'),
             'body' => $request->input('body'),
             'image' => $imagePath,
-            'author' => $request->input('author'),
         ]);
 
         return redirect()->route('posts.show', $post->id)->with('success', 'Post updated successfully!');

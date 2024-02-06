@@ -15,9 +15,6 @@
             <label for="body">Body:</label>
             <textarea id="body" name="body" rows="15" required></textarea>
 
-            <label for="author">Author:</label>
-            <input type="text" id="author" name="author" required>
-
             <label for="image">Image (optional):</label>
             <input type="file" id="image" name="image">
 
