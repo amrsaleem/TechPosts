@@ -16,7 +16,7 @@
             <textarea id="body" name="body" rows="15" class="post-form__textarea" required></textarea>
 
             <label for="image" class="post-form__label">Image (optional):</label>
-            <input type="file" id="image" name="image" class="post-form__file">
+            <input type="file" accept="image/*" id="image" name="image" class="post-form__file">
 
             <button type="submit" class="post-form__submit">Create Post</button>
         </form>
