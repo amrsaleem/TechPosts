@@ -87,7 +87,9 @@ class PostController extends Controller
         $post = Post::findOrFail($id);
         $this->authorize('delete', $post);
         $post->delete();
-        Storage::disk('public')->delete($post->image);
+        if ($post->image != null) {
+            Storage::disk('public')->delete($post->image);
+        }
         return redirect()->route('posts.index')->with('success', 'Post deleted successfully.');
     }
 
