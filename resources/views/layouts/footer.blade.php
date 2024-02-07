@@ -1,3 +1,3 @@
 <footer>
-    <p>&copy; {{ date('Y') }} Posts App. All rights reserved.</p>
+    <p>&copy; {{ date('Y') }} TechPosts App. All rights reserved.</p>
 </footer>

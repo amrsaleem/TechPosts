@@ -3,3 +3,8 @@
     color: #fff;
     cursor: pointer;
 }
+
+.delete-form {
+    display: flex;
+    flex-direction: column;
+}

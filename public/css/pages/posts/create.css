@@ -30,11 +30,16 @@
     padding: 10px;
 }
 
+.post-form__textarea {
+    resize: vertical;
+}
+
 /* .post-form__submit element styles */
 .post-form__submit {
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
+    border: none;
 }
 
 /* .post-form__back-link element styles */

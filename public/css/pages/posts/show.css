@@ -3,11 +3,11 @@
     line-height: 2;
     max-width: 800px;
     margin: 20px auto;
-    /* background-color: #fff; */
+    background-color: #fff;
     padding: 20px;
-    /* border-radius: 5px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-    /* font-size: large; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: large;
     font-weight: 100;
 }
 
@@ -15,4 +15,17 @@
     width: 100%;
     /* height: 200px; */
     object-fit: cover;
+}
+
+.post-container__status {
+ display: flex;
+justify-content:space-between;
+}
+
+.post-container__edit-link {
+    background-color: #007bff;
+    color: white;
+    padding:10px;
+    text-decoration: none;
+
 }

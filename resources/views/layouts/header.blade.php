@@ -1,9 +1,9 @@
 <header class="header">
-    <h1 class="header__title">Posts App</h1>
+    <h1 class="header__title"><a href="/posts">TechPosts</a></h1>
 
     <nav class="header__nav">
         <ul class="header__menu">
-            <li class="header__menu-item"><a href="/" class="header__menu-link">Home</a></li>
+            <li class="header__menu-item"><a href="/posts" class="header__menu-link">Home</a></li>
             <li class="header__menu-item"><a href="/posts" class="header__menu-link">Posts</a></li>
             <li class="header__menu-item"><a href="/about" class="header__menu-link">About</a></li>
             <li class="header__menu-item"><a href="/posts/create" class="header__menu-link">Write</a></li>
