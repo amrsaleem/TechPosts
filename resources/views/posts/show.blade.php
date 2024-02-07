@@ -20,9 +20,9 @@
 
         <a href="{{ route('posts.index') }}" class="back-link">Back to Posts</a>
 
-         @auth
+        @can('update', $post)
             <a href="{{ route('posts.edit', $post) }}" class="Update">Update</a>
-        @endauth
+        @endcan
 
     </div>
 @endsection
