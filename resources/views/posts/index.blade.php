@@ -9,7 +9,7 @@
                 <img src="{{ asset('storage/' . $post->image) }}" alt="Card Image 1">
                 <div class="card-content">
                     <h2><a href="/posts/{{$post->id}}"> {{$post->title}}</a></h2>
-                    <p>{{$post->author}}.</p>
+                    <p>{{$post->user->name}}.</p>
                 </div>
             </div>
 

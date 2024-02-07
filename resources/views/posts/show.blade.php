@@ -12,7 +12,7 @@
             <p><a href="{{ route('posts.edit', $post) }}" class="post-container__edit-link">Edit your post</a></p>
             <p class="likes">Likes: {{ $post->likes }}</p>
         @else
-            <p class="author">Author: {{ $post->author }}</p>
+            <p class="author">Author: {{ $post->user->name }}</p>
             <p class="likes">Likes: {{ $post->likes }}</p>
         @endcan
         </div>

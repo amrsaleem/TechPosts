@@ -10,12 +10,12 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::with('comments.user')->get();
         return view('posts.index', compact('posts'));
     }
     public function show($id)
     {
-        $post = Post::findOrFail($id);
+        $post = Post::with('comments.user')->find($id);
         return view('posts.show', compact('post'));
     }
 
