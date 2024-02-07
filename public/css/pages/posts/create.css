@@ -1,0 +1,52 @@
+/* .post-form block styles */
+.post-form {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .post-form__title element styles */
+.post-form__title {
+    margin-bottom: 20px;
+}
+
+/* .post-form__form element styles */
+.post-form__form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .post-form__label and .post-form__input element styles */
+.post-form__label,
+.post-form__input,
+.post-form__textarea,
+.post-form__file,
+.post-form__submit,
+.post-form__back-link {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.post-form__textarea {
+    resize: vertical;
+}
+
+/* .post-form__submit element styles */
+.post-form__submit {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+/* .post-form__back-link element styles */
+.post-form__back-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
