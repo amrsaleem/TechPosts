@@ -1,4 +1,6 @@
-.post-container {
+.post-container,
+.comment-form-container,
+.comments-section {
     font-family: sans-serif;
     line-height: 2;
     max-width: 800px;
@@ -28,4 +30,94 @@ justify-content:space-between;
     padding:10px;
     text-decoration: none;
 
+}
+
+.comment-form__form {
+    display:flex;
+    padding:10px 10px;
+}
+
+.comment-form__input {
+    margin-right: 10px;
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.comment-form__submit {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+}
+
+
+.comment-container__comment-text{
+    flex-grow: 1;
+}
+
+
+.comments-section__title {
+    margin-bottom: 10px;
+}
+
+.comments-section__empty {
+    color: #999;
+}
+
+.comments-section__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.comment {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+    /* box-shadow: black 1px 1px ; */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    /* padding-bottom: 10px; */
+}
+
+.comment:last-child {
+    border-bottom:0;
+}
+
+
+.comment__details {
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+
+.comment__text  {
+    display: inline;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+}
+.comment__user {
+    font-weight: bold;
+}
+
+.comment__delete-form {
+    display: inline;
+}
+
+.comment__delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.comment__delete-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.comment__delete-btn:hover img {
+    opacity: 0.7;
 }
