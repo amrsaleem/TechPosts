@@ -32,6 +32,11 @@ main {
     justify-content: space-around;
 }
 
+.alert-danger{
+    background-color: lightcoral;
+
+}
+
 
 
 .card {
