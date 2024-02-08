@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -42,6 +43,8 @@ Route::get('/posts', [PostController::class, 'index'] )->name('posts.index');
 Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show');
 
 
+Route::post('/posts/{post_id}/comments',[CommentController::class, 'store'])->name('comments.store');
+Route::delete('/posts/comments/{comment_id}',[CommentController::class, 'destroy'])->name('comments.destroy');
 
 
 
