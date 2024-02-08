@@ -41,7 +41,7 @@ class PostController extends Controller
         $post = Post::create([
             'title' => $request->input('title'),
             'body' => $request->input('body'),
-            'author' => auth()->user()->id,
+            'user_id' => auth()->user()->id,
             'likes' => 0,
             'image' => $imagePath,
         ]);
