@@ -17,6 +17,12 @@
 
         @endforeach
 
+
+
+
+    </div>
+    <div class="container">
+    {{ $posts->links() }}
     </div>
 @endsection
 
