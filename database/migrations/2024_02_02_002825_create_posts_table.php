@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('body');
-            $table->foreignId('author')->constrained('users','id');
+            $table->foreignId('author')->constrained('users','id')->cascadeOnDelete();
             $table->integer('likes')->default(0);
             $table->string('image')->nullable();
             $table->timestamps();

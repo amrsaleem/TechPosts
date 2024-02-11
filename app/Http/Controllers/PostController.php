@@ -10,7 +10,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::with('comments.user')->get();
+        $posts = Post::with('comments.user')->paginate(9);;
         return view('posts.index', compact('posts'));
     }
     public function show($id)
