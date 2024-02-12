@@ -33,7 +33,7 @@ To get started with the TechPosts App, follow these steps:
 
 3. Create a `.env` file by copying the `.env.example` file and updating the database configuration:
 ```bash
-	`cp .env.example .env` 
+    cp .env.example .env
 ```
 4. Generate an application key:
 ```bash
@@ -47,4 +47,4 @@ To get started with the TechPosts App, follow these steps:
 ```bash
 	php artisan serve
 ```
-7. Access the application in your web browser at `http://localhost:8000`.
+7. Access the application in your web browser at `http://127.0.0.1:8000/posts`.
